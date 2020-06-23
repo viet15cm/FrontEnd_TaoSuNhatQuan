@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="WebFromDemo.MasterPages.Frontend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <script src="../JavaScript/modernizr-custom.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="PageWrapper">
+            <header><a href="/"></a></header>
+            <nav>Phần MENU</nav>
+            <section id="MainContent">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+             </section>
+            <aside id="Sidebar">
+                <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+                    <asp:ListItem Value="Monochrome"></asp:ListItem>
+                    <asp:ListItem Value="DarkGrey"></asp:ListItem>
+                </asp:DropDownList>
+            </aside>
+            <footer> Phần footer </footer>
+                
+        </div>
+    </form>
+</body>
+</html>

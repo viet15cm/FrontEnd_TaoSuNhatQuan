@@ -1,0 +1,50 @@
+﻿#PageWrapper {
+    font-family: Verdana, Arial, Sans-Serif;
+    width: 90%;
+    margin: 0px auto;
+    background-color: #565656;
+    height: 568px;
+}
+
+
+
+header {
+    width: 100%;
+    height: 147px;
+    background: url(Images/Header.jpg) no-repeat center;
+    background-size: cover;
+    color: #ffffff
+}
+
+nav {
+    width: 18%;
+    height: 400px;
+    float: left;
+    background: url(Images/MenuBackground.jpg) no-repeat center;
+}
+
+#MainContent{
+    background-color:blanchedalmond;
+    width: 60%;
+    height: 400px;
+    float: left;
+}
+
+#Sidebar{
+    width: 20%;
+    height: 400px;
+    float: left;
+    background-color:khaki;
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px dashed gray;
+    height: 37px;
+    line-height: 37px;
+    clear: both;
+    background-color: #FCBB5B;
+    width: 100%;
+    background-color: blue;
+}
